@@ -1,7 +1,6 @@
 use crate::bus::bus::Bus;
 use crate::traits::read::Read;
 use crate::traits::write::Write;
-use std::cell::RefCell;
 
 #[derive(Debug)]
 pub struct Cpu6502<'a>{

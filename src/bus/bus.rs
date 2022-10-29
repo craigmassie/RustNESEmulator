@@ -1,8 +1,7 @@
 use crate::cpu::cpu_6502::Cpu6502;
 use crate::traits::read::Read;
 use crate::traits::write::Write;
-use std::rc::Weak;
-use std::cell::{RefCell, Cell};
+use std::cell::RefCell;
 
 #[derive(Debug)]
 pub struct Bus<'a> {
