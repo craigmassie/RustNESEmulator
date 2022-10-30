@@ -50,8 +50,6 @@ impl<'a> Cpu6502<'a> {
             let additional_addressing_clock_cycle = instruction.addressing_mode.execute(self);
             let additional_execution_clock_cycle = instruction.opcode.execute(self);
             self.cycles += additional_addressing_clock_cycle + additional_execution_clock_cycle;
-        // execute by execution code, get additional clock cycle
-        // add both to count
         }
         self.cycles -= 1;
     }
